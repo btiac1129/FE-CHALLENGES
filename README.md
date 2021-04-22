@@ -6,9 +6,9 @@
 
 ## FE Challenges list
 
-| no  | Company                                                            | Stack        | Challenge                                                     | find in here                                                        |
-| --- | ------------------------------------------------------------------ | ------------ | ------------------------------------------------------------- | ------------------------------------------------------------------- |
-| 1   | :gibraltar: [Addison Global - 2](http://www.addisongloballtd.com/) | HTML/CSS, JS | [Code →](https://github.com/addisonglobal/web-technical-test) | [Repository →](https://github.com/felipefialho/frontend-challenges) |
+| no  | Company                                                            | Stack        | Challenge                                                               | Find in here                                                        | Solve                                                                              | Blog |
+| --- | ------------------------------------------------------------------ | ------------ | ----------------------------------------------------------------------- | ------------------------------------------------------------------- | ---------------------------------------------------------------------------------- | ---- |
+| 1   | :gibraltar: [Addison Global - 2](http://www.addisongloballtd.com/) | HTML/CSS, JS | [Challenge Code →](https://github.com/addisonglobal/web-technical-test) | [Repository →](https://github.com/felipefialho/frontend-challenges) | [My Code →](https://github.com/btiac1129/FE-CHALLENGES/tree/master/addison-global) |      |
 
 ## License
 
