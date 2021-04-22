@@ -1,0 +1,117 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-weight: 300;
+    color: #b9c1cc;
+}
+
+h1,
+h2 {
+    font-family: Lato;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.ft-dark {
+    color: #47525e;
+}
+
+.display {
+    display: none;
+}
+
+@media screen and (min-width: 0) {
+    .tabs {
+        width: 90%;
+        margin: 30px auto;
+        border: 1px solid #8090a5;
+        border-radius: 10px;
+    }
+    .tabs>nav {
+        display: flex;
+        position: relative;
+    }
+    .tab {
+        width: 100%;
+        line-height: 2em;
+        color: #8090a5;
+        font-size: 3vw;
+        font-weight: 400;
+        text-align: center;
+        border-right: 1px solid #8090a5;
+    }
+    .tab:nth-child(2) {
+        border-right: none;
+    }
+    .active[data-index="0"] {
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        background: #8090a5;
+        color: #fff;
+    }
+    .active[data-index="1"] {
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        background: #8090a5;
+        color: #fff;
+    }
+    /* promotions CSS */
+    .promotions {
+        width: 90%;
+        margin: 30px auto;
+        display: flex;
+        flex-direction: column;
+    }
+    article {
+        display: block;
+        margin-bottom: 30px;
+    }
+    img {
+        width: 100%;
+        display: block;
+        overflow: hidden;
+    }
+    .promo-body {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        background: #f2f2f2;
+        text-align: center;
+    }
+    .promo-body h2 {
+        display: inline-block;
+        margin: 10px;
+        padding: 20px;
+        font-size: 7vw;
+        font-weight: 400;
+    }
+    .promo-body p {
+        display: inline-block;
+        padding: 0 5%;
+        font-size: 2.9vw;
+        font-weight: 400;
+        text-align: left;
+    }
+    .promo-buttons {
+        margin: 10px;
+        padding: 20px;
+    }
+    button {
+        width: 45%;
+        margin-right: 8%;
+        line-height: 2em;
+        border-radius: 10px;
+        border: 2px solid #47525e;
+        font-size: 3vw;
+    }
+    button[data-index='1'] {
+        margin-right: 0;
+        background: #47525e;
+        color: #f2f2f2;
+    }
+}
