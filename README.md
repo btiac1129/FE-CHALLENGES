@@ -8,7 +8,9 @@
 
 | no  | Company                                                            | Stack        | Challenge                                                               | Find in here                                                        | Solve                                                                              | Blog |
 | --- | ------------------------------------------------------------------ | ------------ | ----------------------------------------------------------------------- | ------------------------------------------------------------------- | ---------------------------------------------------------------------------------- | ---- |
-| 1   | :gibraltar: [Addison Global - 2](http://www.addisongloballtd.com/) | HTML/CSS, JS | [Challenge Code →](https://github.com/addisonglobal/web-technical-test) | [Repository →](https://github.com/felipefialho/frontend-challenges) | [My Code →](https://github.com/btiac1129/FE-CHALLENGES/tree/master/addison-global) |      |
+| 1   | :gibraltar: [Addison Global - 2](http://www.addisongloballtd.com/) | HTML/CSS, JS | [Challenge Code →](https://github.com/addisonglobal/web-technical-test) | [Repository →](https://github.com/felipefialho/frontend-challenges) | [My Code →](https://github.com/btiac1129/FE-CHALLENGES/tree/master/addison-global) |  [My Blog →](https://count-on-it.tistory.com/66)    |
+| 2   | :us: [LoKtra](http://loktra.com/) | HTML/CSS, JS | [Challenge Code →](https://github.com/Loktra/Front-End-Engineer)   | [Repository →](https://github.com/felipefialho/frontend-challenges) | [My Code →](https://github.com/btiac1129/FE-CHALLENGES/tree/master/loktra) |      |
+
 
 ## License
 
