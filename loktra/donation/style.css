@@ -1,0 +1,159 @@
+body {
+    color: #777777;
+    font-size: 1.625rem;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.ft-orange {
+    color: #f15e33;
+}
+
+
+/* input type=number  */
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+
+/* style css */
+
+.wrap {
+    margin: auto;
+    width: calc(100% - 1.625rem);
+    max-width: 36.75rem;
+}
+
+.notification {
+    margin-top: 30px;
+}
+
+.notification-bubble {
+    background: #424242;
+    border-radius: 10px;
+    box-sizing: border-box;
+    color: white;
+    height: 100px;
+    margin-bottom: 20px;
+    padding: 30px;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+.notification-bubble:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 80%;
+    width: 0;
+    height: 0;
+    border: 20px solid transparent;
+    border-top-color: #424242;
+    border-bottom: 0;
+    border-left: 0;
+    margin-left: -10px;
+    margin-bottom: -20px;
+}
+
+main {
+    margin-bottom: 30px;
+}
+
+.donation {
+    border: 2px solid #dcdcdc;
+    box-shadow: 3px 5px 5px #dcdcdc;
+}
+
+.donation-slider {
+    width: 100%;
+    height: 1.625rem;
+    border-bottom: 2px solid #dcdcdc;
+}
+
+.donation-slider span {
+    display: block;
+    height: 100%;
+    background-color: #f15e33;
+    overflow: hidden;
+}
+
+.donation-textarea {
+    padding: 3.125rem;
+}
+
+.donation-form {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.donation-input {
+    background: #fff;
+    background-image: url("./dollar.svg");
+    background-size: 1.625rem 1.625rem;
+    background-repeat: no-repeat;
+    background-position: 1.625rem;
+    border: 2px solid #dcdcdc;
+    border-radius: 10px;
+    font-size: 1.625rem;
+    height: 100px;
+    margin-right: 50px;
+    padding: 1.625rem 52px;
+    width: calc((100% - 50px)/2);
+}
+
+.donation-button {
+    background: #00be1c;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 1.625rem;
+    font-weight: bold;
+    width: calc((100% - 50px)/2);
+    height: 100px;
+}
+
+.buttons {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.buttons .save-btn,
+.buttons .share-btn {
+    border: 2px solid #dcdcdc;
+    border-radius: 10px;
+    box-shadow: 3px 5px 5px #dcdcdc;
+    font-size: 1.625rem;
+    color: #777777;
+    width: calc(100%/2 - 10px);
+    height: 70px;
+}
+
+.popup-modal {
+    background-color: #fff;
+    border: 2px solid #dcdcdc;
+    border-radius: 10px;
+    box-shadow: 3px 5px 5px #dcdcdc;
+    font-size: 1.625rem;
+    margin-top: 50px;
+    height: 50px;
+    width: 100%;
+    opacity: 0;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.popup-modal.is--visible {
+    opacity: 1;
+    pointer-events: auto;
+}
