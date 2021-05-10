@@ -42,7 +42,7 @@ const createDonation = () => {
     // button click event
     $donationButton.addEventListener("click", () => {
         // update $donors
-        if (remainingAmount > 0) clicks++;
+        if (remainingAmount > 0 && $donationInput.value !== "") clicks++;
         $donors.innerHTML = `<p>Join the ${clicks} other donors who have already supported this project. Every dollar helps.</p>`;
 
         // update $notification
@@ -67,8 +67,24 @@ document.querySelector(".save-btn").onclick = (() => {
     };
 })();
 
-document.querySelector(".popup-modal__close").onclick = (() => {
-    const $popupModal = document.querySelector(".popup-modal");
+document.querySelector(
+    ".popup-modal__close[data-popup-modal-close='one']"
+).onclick = (() => {
+    const $popupModal = document.querySelector(
+        ".popup-modal[data-popup-modal='one']"
+    );
+
+    return (e) => {
+        $popupModal.classList.remove("is--visible");
+    };
+})();
+
+document.querySelector(
+    ".popup-modal__close[data-popup-modal-close='two']"
+).onclick = (() => {
+    const $popupModal = document.querySelector(
+        ".popup-modal[data-popup-modal='two']"
+    );
 
     return (e) => {
         $popupModal.classList.remove("is--visible");
