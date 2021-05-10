@@ -184,6 +184,11 @@ main {
 .popup-modal.is--visible {
     opacity: 1;
     pointer-events: auto;
+}
+
+.popup-modal[data-popup-modal="two"].is--visible {
+    opacity: 1;
+    pointer-events: auto;
     height: 150px;
     line-height: 50px;
 }
