@@ -19,7 +19,14 @@
 
         <!-- donation -->
         <main>
+            <!-- share modal -->
+            <div class="popup-modal" data-popup-modal="two">
+                <i class="fa fa-window-close popup-modal__close" data-popup-modal-close="two"></i>
+                <span>Share this donation</span><br>
+                <div class="fb-share-button" data-href="https://sharp-banach-3627e4.netlify.app/loktra/donation/index.html" data-layout="button" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">공유하기</a></div>
+            </div>
             <div class="donation">
+
                 <div class="donation-slider">
                     <span style="width: 0;"></span>
                 </div>
@@ -48,11 +55,16 @@
 
         <!-- saved modal -->
         <div class="popup-modal" data-popup-modal="one">
-            Saved!
+            <span>Saved!</span>
+            <i class="fa fa-window-close popup-modal__close"></i>
         </div>
     </div>
 
     <script src="index.js"></script>
+    <script src="https://kit.fontawesome.com/708af2c689.js" crossorigin="anonymous"></script>
+    <!-- Facebook share javascript SDK -->
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/ko_KR/sdk.js#xfbml=1&version=v10.0" nonce="7pCrs1uH"></script>
 </body>
 
 </html>

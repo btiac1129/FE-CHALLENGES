@@ -71,6 +71,8 @@ main {
 .donation {
     border: 2px solid #dcdcdc;
     box-shadow: 3px 5px 5px #dcdcdc;
+    position: relative;
+    z-index: 9;
 }
 
 .donation-slider {
@@ -139,21 +141,56 @@ main {
     height: 70px;
 }
 
-.popup-modal {
+.popup-modal[data-popup-modal="one"] {
     background-color: #fff;
     border: 2px solid #dcdcdc;
     border-radius: 10px;
     box-shadow: 3px 5px 5px #dcdcdc;
     font-size: 1.625rem;
     margin-top: 50px;
-    height: 50px;
     width: 100%;
     opacity: 0;
     text-align: center;
-    padding: 10px 0;
+    line-height: 50px;
+}
+
+.popup-modal[data-popup-modal="two"] {
+    background-color: #fff;
+    border: 2px solid #dcdcdc;
+    border-radius: 10px;
+    box-shadow: 3px 5px 5px #dcdcdc;
+    color: black;
+    font-size: 1.625rem;
+    position: absolute;
+    width: calc(100% - 1.625rem);
+    max-width: 36.5rem;
+    height: 0;
+    opacity: 0;
+    text-align: center;
+    z-index: 10;
+    top: 30%;
+}
+
+.popup-modal__close {
+    position: relative;
+    left: 37%;
+}
+
+.popup-modal__close[data-popup-modal-close="two"] {
+    position: relative;
+    left: 65%;
 }
 
 .popup-modal.is--visible {
     opacity: 1;
     pointer-events: auto;
+    height: 150px;
+    line-height: 50px;
+}
+
+
+/* share button */
+
+.fb-share-button {
+    top: 30px;
 }

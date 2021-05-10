@@ -2,6 +2,7 @@ var totalAmount = 1000;
 var remainingAmount = totalAmount;
 var clicks = 0;
 
+// Slider
 function Slider(targetElement) {
     this.targetElement = targetElement;
     this.current = 0;
@@ -41,12 +42,14 @@ const createDonation = () => {
     // button click event
     $donationButton.addEventListener("click", () => {
         // update $donors
-        clicks++;
+        if (remainingAmount > 0) clicks++;
         $donors.innerHTML = `<p>Join the ${clicks} other donors who have already supported this project. Every dollar helps.</p>`;
 
         // update $notification
         remainingAmount = remainingAmount - $donationInput.value;
-        if (remainingAmount <= 0) remainingAmount = 0;
+        if (remainingAmount <= 0) {
+            remainingAmount = 0;
+        }
         $notification.innerHTML = `$${remainingAmount} still needed for this project`;
 
         // update slider
@@ -55,7 +58,27 @@ const createDonation = () => {
 };
 
 document.querySelector(".save-btn").onclick = (() => {
+    const $popupModal = document.querySelector(
+        ".popup-modal[data-popup-modal='one']"
+    );
+
+    return (e) => {
+        $popupModal.classList.add("is--visible");
+    };
+})();
+
+document.querySelector(".popup-modal__close").onclick = (() => {
     const $popupModal = document.querySelector(".popup-modal");
+
+    return (e) => {
+        $popupModal.classList.remove("is--visible");
+    };
+})();
+
+document.querySelector(".share-btn").onclick = (() => {
+    const $popupModal = document.querySelector(
+        ".popup-modal[data-popup-modal='two']"
+    );
 
     return (e) => {
         $popupModal.classList.add("is--visible");
