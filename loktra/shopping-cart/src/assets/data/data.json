@@ -1,0 +1,57 @@
+[{
+        "id": "1",
+        "imageUrl": "./src/assets/images/zasant-blouse.jpg",
+        "name": "자생트 블라우스",
+        "price": "36,000",
+        "quantity": "5"
+    },
+    {
+        "id": "2",
+        "imageUrl": "src/assets/images/pocket-slacks.jpg",
+        "name": "포켓 슬랙스",
+        "price": "45,000",
+        "quantity": "7"
+    },
+    {
+        "id": "3",
+        "imageUrl": "src/assets/images/benny-sunglass.jpg",
+        "name": "베니 선글라스",
+        "price": "18,000",
+        "quantity": "5"
+    },
+    {
+        "id": "4",
+        "imageUrl": "src/assets/images/macbook-air.jpg",
+        "name": "스페이스 그레이",
+        "price": "1,290,000",
+        "quantity": "4"
+    },
+    {
+        "id": "5",
+        "imageUrl": "src/assets/images/bookshelf.png",
+        "name": "원형 회전책장 북타워",
+        "price": "152,700",
+        "quantity": "3"
+    },
+    {
+        "id": "6",
+        "imageUrl": "src/assets/images/moleskine-diary.jpg",
+        "name": "몰스킨 다이어리",
+        "price": "27,500",
+        "quantity": "7"
+    },
+    {
+        "id": "7",
+        "imageUrl": "src/assets/images/ipad.png",
+        "name": "아이패드",
+        "price": "579,000",
+        "quantity": "2"
+    },
+    {
+        "id": "8",
+        "imageUrl": "src/assets/images/classic-trench-coat.jpg",
+        "name": "클래식 트렌치 코트",
+        "price": "39,900",
+        "quantity": "1"
+    }
+]
